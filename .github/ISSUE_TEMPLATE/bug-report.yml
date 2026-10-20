@@ -1,0 +1,42 @@
+name: 不具合の報告
+description: 芋づる写真館の公開ベータ・検証用ビルドで起きた問題
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        報告内容は公開されます。個人の写真、氏名を含むパス、秘密情報は伏せてください。
+  - type: input
+    id: version
+    attributes:
+      label: アプリのバージョン
+      description: Release のタグ、または検証用ビルドのコミット
+      placeholder: 0.3.0-beta.1
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: OS と PC
+      placeholder: Windows 11 x64 / macOS 15・M1 など
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 再現する操作
+      description: 最初から順に、操作した内容を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 期待した結果と実際の結果
+      description: エラーが表示された場合は、個人情報を伏せて内容を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: photos
+    attributes:
+      label: 写真・保存先の情報
+      description: 形式、画像サイズ、枚数、内蔵 / 外付け / NAS など。写真の添付は必須ではありません。
