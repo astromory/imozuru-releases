@@ -1,6 +1,7 @@
 # macOS 検証用ビルド
 
 macOS 版はまだ動作保証のある公開ベータではありません。
+当面は検証協力者向けです。開発用リポジトリの閲覧権限が必要です。
 GitHub Actions の `macOS build` から検証用 DMG を取得できます。
 
 | Mac | Artifact |
@@ -28,5 +29,6 @@ WebView2 は不要で、macOS の WKWebView を使用します。
 
 HEIC / HEIF は現在 Windows のデコーダーを使用する実装のため、macOS 版では未対応です。
 そのほかの形式の制限は Windows 版利用ガイドに準じます。
+利用条件は同梱の `TERMS.txt`、第三者ソフトウェアの条件は `THIRD-PARTY-NOTICES.txt` を参照してください。
 不具合は https://github.com/astromory/imozuru-releases/issues へ、
 Mac のチップ・macOS のバージョン・ビルド元のコミットまたはタグを添えて報告してください。
